@@ -3,6 +3,10 @@ import ptBR from 'date-fns/locale/pt-BR'
 import { Comment } from './Comment'
 import {Avatar} from './Avatar'
 import styles from './Post.module.css'
+import { useState } from 'react'
+
+
+
 export function Post({author, publishedAt, content}){
 
     const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'",{locale:ptBR})
@@ -11,6 +15,19 @@ export function Post({author, publishedAt, content}){
         addSuffix: true
 
     })
+
+    const [comments,setComments] = useState([
+        
+        
+    ])
+
+    function hadleCreateNewComment(){
+        event.preventDefault();
+        setComments([...comments,comments.length+1])
+        console.log(comments);
+    }
+
+    
 
     return (
         <article className={styles.post}>
@@ -49,7 +66,7 @@ export function Post({author, publishedAt, content}){
                 
             </div>
 
-            <form className={styles.commentForm}>
+            <form onSubmit={hadleCreateNewComment} className={styles.commentForm}>
                 <strong>Deixe seu feedback</strong>
                 <textarea 
                 placeholder='Escreva um comentário...'/>
@@ -60,9 +77,9 @@ export function Post({author, publishedAt, content}){
             </form>
 
             <div className={styles.commentList}>
-                <Comment/>
-                <Comment/>
-                <Comment/>
+                {comments.map(comments => {
+                    return <Comment />
+                })}
             </div>
 
         </article>
