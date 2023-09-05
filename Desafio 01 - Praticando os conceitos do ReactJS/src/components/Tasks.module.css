@@ -1,0 +1,12 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid red;
+    justify-content: center;
+    margin-top: 64px;
+    width: 39.87rem;
+    height: 3.377rem;
+    
+}
+
