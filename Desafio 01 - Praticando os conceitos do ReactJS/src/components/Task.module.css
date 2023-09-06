@@ -1,0 +1,43 @@
+.task{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    gap: 12px;
+    width: 736px;
+    max-width: 736px;
+    height: fit-content;
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+
+.checkbox{
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 3.27px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid var(--blue) ;
+    
+    
+}
+
+.checkbox:checked{
+    border: none;
+    content: url(../assets/check.svg);
+    background-color: var(--purple);
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    color: var(--gray-300);
+}
+
+.icon:hover{
+    color: var(--danger);
+}

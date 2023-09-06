@@ -1,6 +1,6 @@
 import styles from './App.module.css'
 import { TaskBar } from './components/Taskbar'
-import { Tasks } from './components/Tasks'
+import { TaskList } from './components/TaskList'
 import { Header } from './components/Header'
 
 export function App() {
@@ -16,7 +16,7 @@ export function App() {
               <TaskBar/>
         </div>
         <main className={styles.main}>
-              <Tasks/>
+              <TaskList/>
         </main>
       </div>
       

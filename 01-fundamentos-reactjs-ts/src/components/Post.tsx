@@ -22,7 +22,7 @@ export interface PostProps{
     content: Content[];
 }
 
-        export function Post({author, publishedAt, content}: PostProps){
+export function Post({author, publishedAt, content}: PostProps){
 
     const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'",{locale:ptBR})
     const publishedDateRelativeToNow = formatDistanceToNow(publishedAt,{
