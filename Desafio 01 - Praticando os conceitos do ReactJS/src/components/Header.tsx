@@ -6,5 +6,4 @@ export function Header(){
             <img src={logo}/>
         </div>
     )
-
 }

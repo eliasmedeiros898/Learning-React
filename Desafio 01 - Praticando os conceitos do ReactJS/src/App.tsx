@@ -1,7 +1,7 @@
 import styles from './App.module.css'
 import { TaskBar } from './components/Taskbar'
 import { Tasks } from './components/Tasks'
-import { Header } from './components/header'
+import { Header } from './components/Header'
 
 export function App() {
   

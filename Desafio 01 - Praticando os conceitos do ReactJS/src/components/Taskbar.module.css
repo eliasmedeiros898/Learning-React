@@ -21,6 +21,8 @@ input:focus{
     outline: 1px solid var(--blue);
 }
 
+
+
 button{
     display: flex;
     flex-direction: row;
@@ -41,4 +43,8 @@ button img{
     margin: 0;
     width: 1rem;
     height: 1rem;
+}
+
+button:hover{
+    background: var(--blue);
 }

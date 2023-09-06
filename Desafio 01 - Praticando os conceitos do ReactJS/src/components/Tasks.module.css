@@ -1,12 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
 .body{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    
-    border: 1px solid red;
-    justify-content: center;
-    margin-top: 64px;
-    width: 39.87rem;
-    height: 3.377rem;
+    margin-top: 4rem;
+    gap: 1.5rem;
+}
+
+.tasksInfo{
+    display: flex;
+    gap: 30rem;
     
 }
 
+.createdTasks{
+    display: flex;
+    gap: 0.5rem;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.doneTasks{
+    display: flex;
+    gap: 0.5rem;
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.counter{
+    background: var(--gray-400);
+    padding: 2px 10px;
+    border-radius: 999px;
+    color: var(--gray-100);
+}
+
+.taskList{
+    border: 1px solid var(--gray-300);
+    width: 30rem;
+
+}
