@@ -47,6 +47,11 @@
     font-size: 0.875rem;
 }
 
+.newTaskForm button:hover{
+    background: var(--blue);
+    transition: 0.2s;
+}
+
 .newTaskForm input:focus{
     outline: 1px solid var(--purple);
 }
