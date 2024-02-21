@@ -1,4 +1,4 @@
-import { HeaderContainer, LocationCartContainer, Location, Cart, Logo } from "./styles";
+import { HeaderContainer, LocationCartContainer, Location, Cart } from "./styles";
 import  logo  from '../../assets/Logo.svg'
 import MapPin from '../../assets/mappin.svg'
 import cart from '../../assets/cart.svg'
@@ -7,7 +7,11 @@ import { NavLink } from "react-router-dom";
 export function Header() {
     return(
         <HeaderContainer>
-            <Logo><img src={logo} alt="" /></Logo>
+            
+            <NavLink to='/' id="navlink">
+               <img src={logo} alt=""/>
+            </NavLink>
+            
             <LocationCartContainer>
                 <Location>
                     <img src={MapPin} alt="" />
@@ -17,9 +21,6 @@ export function Header() {
                     <NavLink to='/checkout' id="navlink">
                        <img src={cart} alt="" />  
                     </NavLink>
-                       
-                    
-                    
                 </Cart>
             </LocationCartContainer>
             

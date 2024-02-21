@@ -18,7 +18,8 @@ export const GlobalStyle = createGlobalStyle`
         background: ${(props) => props.theme['base-background']};
         color: ${(props) => props.theme['text']};
         -webkit-font-smoothing: antialiased;
-        height: 2000px;
+        margin: 0 160px;
+        border: 1px solid red;
     
     }
 
