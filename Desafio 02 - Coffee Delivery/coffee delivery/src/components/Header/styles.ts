@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
     top: 0;
     left: 0;
     width: 100%;
+    background: ${(props) => props.theme['base-background']};
 
     
 `
@@ -47,17 +48,19 @@ export const Cart = styled.div`
     width: 48px;
     border-radius: 6px;
 
-    button {
-        background: ${(props) => props.theme['yellow-light']};
-        border: none;
-        cursor: pointer;
-    }
-
-    button:focus{
-        box-shadow: 0 0 0 0;
-    }
 
     img {
         width: 25px;
     }
+
+    #navlink {
+        background: ${(props) => props.theme['yellow-light']};
+        border: none;
+        cursor: pointer;
+
+        &:focus {
+            box-shadow: 0 0 0 0;
+        }
+    }
+
 `

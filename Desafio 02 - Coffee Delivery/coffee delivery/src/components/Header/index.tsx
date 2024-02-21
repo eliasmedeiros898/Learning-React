@@ -2,6 +2,7 @@ import { HeaderContainer, LocationCartContainer, Location, Cart, Logo } from "./
 import  logo  from '../../assets/Logo.svg'
 import MapPin from '../../assets/mappin.svg'
 import cart from '../../assets/cart.svg'
+import { NavLink } from "react-router-dom";
 
 export function Header() {
     return(
@@ -13,9 +14,11 @@ export function Header() {
                     <p>Porto Alegre, RS</p>
                 </Location>
                 <Cart>
-                    <button>
-                       <img src={cart} alt="" /> 
-                    </button>
+                    <NavLink to='/checkout' id="navlink">
+                       <img src={cart} alt="" />  
+                    </NavLink>
+                       
+                    
                     
                 </Cart>
             </LocationCartContainer>
