@@ -14,8 +14,17 @@
             "description": "Hamburger",
             "type": "outcome",
             "category": "Alimentação",
-            "price": -50,
+            "price": 50,
             "createdAt": "2024-03-06T20:10:11.099Z"
+            
+        },
+        {
+            "id": "3",
+            "description": "Academia",
+            "type": "outcome",
+            "category": "Saúde",
+            "price": 150,
+            "createdAt": "2024-03-06T21:55:59.650Z"
             
         }
     ]
